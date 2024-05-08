@@ -1,0 +1,17 @@
+:root{
+    --white:#ffffff;
+    --blue1:#00171f;
+    --blue2:#003459;
+    --blue3:#007ea7;
+    --blue4:#00a8e8;
+    --textwhite:#CACACA;
+    --textgrey:#959595;
+    --black:#2C2C2C;
+    --blackpara:#555555;
+}
+h1,h2{
+    color: var(--black);
+}
+p{
+    color: var(--blackpara);
+}

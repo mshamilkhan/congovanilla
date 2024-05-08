@@ -1,5 +1,5 @@
 <?php
-include("logindb.php");
+include("../database/logindb.php");
 ?>
 
 
@@ -9,18 +9,18 @@ include("logindb.php");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="../css/login.css">
     <title>Document</title>
 </head>
 <body>
     <div class="main">
 
         <div class="left">
-            <div class="leftimg"><img src="./images/robo.jpg" alt="Left Image" /></div>
+            <div class="leftimg"><img src="../images/dis.png" alt="Left Image" /></div>
             <div class="head">
-                <h1>Unlock Your Creativity, No Code Needed</h1>
+                <h1 class="grey">Unlock Your Creativity, No Code Needed</h1>
                 <br />
-                <h1> Discord, Your Canvas.</h1>
+                <h1 class="blue"> Discord, Your Canvas.</h1>
                 <br />
                 <p>Empower Your Ideas, No Coding Required. Discord: Where Imagination Thrives.</p>
             </div>
@@ -28,9 +28,9 @@ include("logindb.php");
         
         <div class="right">
 
-<form action="/logindb.php" method="POST">
+<form action="../database/logindb.php" method="POST">
             <div class="loginbox">
-                <img  src="./images/msk.png" alt="Logo" class="logoimg" />
+                <img  src="../images/msk.png" alt="Logo" class="logoimg" />
                 <div class="logo"></div>
                 
                 <label htmlFor="email">Email</label>
@@ -42,7 +42,7 @@ include("logindb.php");
                     <input type="password" name="password" placeholder="Enter Password Here" class="inp pasinp" required/>
                     <p class="togglepass" id="toggleBtn" onClick={passwordToggle}>show/hide</p>
                 </div>
-                <!-- <p class="forgot" onClick={forgetPasswords}>Forgot Password</p> -->
+              
                 
                 <div class="btnbox">
                     <input type="submit"  value="Login" class="btn" name="login"/>
@@ -54,5 +54,5 @@ include("logindb.php");
         </div>
     </div>
 </body>
-<script src="./assets//javascripts//login.js"></script>
+<script src="../assets/javascripts/login.js"></script>
 </html>

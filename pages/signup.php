@@ -1,5 +1,18 @@
 <?php
-include("signupdb.php");
+include("../database/signupdb.php");
+
+if(isset($_GET['error'])) {
+    if($_GET['error'] == 'email_exists') {
+       
+        header("location: signup.php");
+    }
+ 
+ elseif($_GET['error'] == 'password_mismatch') {
+        echo '<script>alert("Passwords do not match!");</script>';
+        // header("location: signup.php");
+    }
+}
+
 ?>
 
 
@@ -9,18 +22,18 @@ include("signupdb.php");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="../css/login.css">
     <title>Document</title>
 </head>
 <body>
     <div class="main">
 
         <div class="left">
-            <div class="leftimg"><img src="./images/robo.jpg" alt="Left Image" /></div>
+            <div class="leftimg"><img src="../images/dis.png" alt="Left Image" /></div>
             <div class="head">
-                <h1>Unlock Your Creativity, No Code Needed</h1>
+                <h1 class="grey">Unlock Your Creativity, No Code Needed</h1>
                 <br />
-                <h1> Discord, Your Canvas.</h1>
+                <h1 class="blue"> Discord, Your Canvas.</h1>
                 <br />
                 <p>Empower Your Ideas, No Coding Required. Discord: Where Imagination Thrives.</p>
             </div>
@@ -28,16 +41,18 @@ include("signupdb.php");
         
         <div class="right">
 
-<form action="/signupdb.php" method="POST">
+<form action="./signup.php" method="POST">
+
             <div class="loginbox">
-                <img  src="./images/msk.png" alt="Logo" class="logoimg" />
+
+                <img  src="../images/msk.png" alt="Logo" class="logoimg" />
                 <div class="logo"></div>
                 
                 <label htmlFor="email">Email</label>
-                <input type="email" name="email" placeholder="Enter Email Here" class="inp emailinp" required/>
+                <input type="email" name="email" placeholder="Enter email here" class="inp emailinp" required/>
 
                 <label htmlFor="usrname">Username</label>
-                <input type="text" name="username" placeholder="Enter username Here" class="inp emailinp" required/>
+                <input type="text" name="username" placeholder="Enter username here" class="inp emailinp" required/>
 
                 <label htmlFor="password">Password</label>
                 <div class="pas">
@@ -53,7 +68,7 @@ include("signupdb.php");
                 
                 <div class="btnbox">
                     <button class="btn"><a href="login.php">Login</a></button>
-                    <input type="submit"  value="Signup" class="btn" name="signup"/>
+                    <input type="submit"  value="Signup" class="btn signup" name="signup" onclick=""/>
                     
                 </div>
             </div>
@@ -62,5 +77,6 @@ include("signupdb.php");
         </div>
     </div>
 </body>
-<script src="./assets//javascripts//login.js"></script>
+<script src="../assets/javascripts/login.js"></script>
+<script src="../assets/javascripts/signup.js"></script>
 </html>

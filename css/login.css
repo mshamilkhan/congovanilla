@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url("./mskvariables");
 :root{
     --txtgrey:#414141;
+    --txtgreylight:#8f8f8f;
     --blue3:#007EA7;
+    --blue4:#05a9e0;
 }
 
 *{
@@ -89,7 +92,7 @@ input:focus {
     width: 100%;
     height: 100vh;
     object-fit: cover;
-    opacity: 0.9;
+    /* opacity: 0.9; */
 }
 
 .head {
@@ -153,7 +156,12 @@ input:focus {
  cursor: pointer;
  color: #007EA7;
 }
-
+h1.grey{
+    color: var(--txtgreylight);
+}
+h1.blue{
+    color: var(--blue4);
+}
 @media (max-width:1700px){
     .head{
         font-size: 1.5rem;

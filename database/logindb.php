@@ -1,5 +1,5 @@
 <?php
-include('connection.php');
+include('../connection.php');
 
 
 
@@ -8,14 +8,11 @@ $email = $_POST['email'];
 $password = $_POST['password'];
 
 $authenticate = "SELECT email from credentials WHERE email='$email' && password = '$password'";
-echo "inside register";
 $result = $conn->query($authenticate);
 if($result->num_rows>0){
-    // echo "email found";
-    header("location: index.php");
+    header("location: ../index.php");
 }else{
-    header("location: login.php");
-    // echo "heheheh no no no";
+    header("location: ../pages/login.php");
 }
 
 

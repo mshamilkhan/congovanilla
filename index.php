@@ -5,8 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Your Website Title</title>
-    <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="mskvariables.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/mskvariables" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 </head>
 
@@ -22,13 +22,13 @@
             <div class="NavOption MenuToggle hidden">
                 <ul class="NavLinks">
                     <li><a href="/">Home</a></li>
-                    <li><a href="/about-us">About Us</a></li>
-                    <li><a href="/contactus.html">Contact Us</a></li>
-                    <li><a href="/sign-in">Sign In</a></li>
+                    <li><a href="./pages/about-us">About Us</a></li>
+                    <li><a href="./pages/contactus.html">Contact Us</a></li>
+                    <!-- <li><a href="./pages/signup.php">Sign In</a></li> -->
                 </ul>
                 <div class="btnbox btnboxmob">
-                    <button class="btn"><a href="login.php">Signup</a></button>
-                    <button class="btn"><a href="login.php">Login</a></button>
+                    <button class="btn"><a href="./pages/signup.php">Signup</a></button>
+                    <button class="btn"><a href="./pages/login.php">Login</a></button>
                 </div>
             </div>
         </div>
@@ -39,13 +39,13 @@
         <img src="./images/img2.png" alt="" class="main" />
 
         <div class="herosection">
-            <h1 class="head1">"Build Discord Bots In</h1>
-            <h1 class="head1 head2">"A Motion Of Blur"</h1>
+            <h1 class="head1">Build Discord Bots In</h1>
+            <h1 class="head1 head2">A Motion Of Blur"</h1>
             <div class="mainparadiv">
                 <p class="mainpara">
-                    " Build code-powered Discord bots in minutes without worrying about
+                     Build code-powered Discord bots in minutes without worrying about
                     servers, sockets or reconnection. Then hook them up to any other API
-                    you want. For business or pleasure."
+                    you want. For business or pleasure.
                 </p>
             </div>
             <div class="btnboxhero">
@@ -101,13 +101,13 @@
         <img src="./images/img2.1.png" alt="" class="main" />
 
         <div class="herosection">
-            <h1 class="head1">"Build Discord Bots In</h1>
-            <h1 class="head1 head2">"A Motion Of Blur"</h1>
+            <h1 class="head1">Build Discord Bots In</h1>
+            <h1 class="head1 head2">A Motion Of Blur</h1>
             <div class="mainparadiv">
                 <p class="mainpara">
-                    " Build code-powered Discord bots in minutes without worrying about
+                    Build code-powered Discord bots in minutes without worrying about
                     servers, sockets or reconnection. Then hook them up to any other API
-                    you want. For business or pleasure."
+                    you want. For business or pleasure.
                 </p>
             </div>
             <div class="btnboxhero">
