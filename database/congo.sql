@@ -12,7 +12,7 @@ START TRANSACTION;
 SET time_zone = "+00:00";
 
 CREATE DATABASE congo;
-
+USE congo;
 CREATE TABLE `credentials` (
   `email` text NOT NULL,
   `password` text NOT NULL
